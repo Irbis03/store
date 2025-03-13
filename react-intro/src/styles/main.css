@@ -1,0 +1,91 @@
+/* @import "./reset.css"; */
+
+
+:root {
+    --grey: #E5E5E5;
+    --yellow: #FFD446;
+
+    --bg: var(--grey);
+    --firm-color: var(--yellow);
+}
+
+html, body {
+    background-color: var(--bg);
+}
+
+.container-limit {
+    margin: 0px auto;
+    padding: 0px 15px;
+    max-width: 1350px;
+}
+
+/* General */
+
+.section {
+    padding: 30px 0px;
+}
+
+.title-1 {
+    margin-bottom: 30px;
+
+    font-size: 30px;
+    font-weight: 700;
+}
+
+/* Catalog */
+
+.products {
+    display: flex;
+    flex-wrap: wrap; /* для переноса карточек*/
+    column-gap: 45px;
+    row-gap: 30px;
+}
+
+/* Product details */
+
+.product-details {
+    display: flex;
+    column-gap: 20px;
+    padding: 20px 0px;
+
+    background-color: white;
+}
+
+.product-details-text {
+    min-width: 629px;
+
+    font-size: 24px;
+}
+
+.product-price-and-buy {
+    min-width: 256px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+    text-align: center;
+    row-gap: 30px;
+}
+
+.product-price {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.big-price-btn {
+    display: inline-block;
+    height: 58px;
+    padding: 12px 10px;
+
+    font-size: 24px;
+    background-color: var(--firm-color);
+}
+
+.big-price-btn:hover {
+    opacity: 0.8;
+}
+
+
+
+
+

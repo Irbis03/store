@@ -1,0 +1,38 @@
+.product {
+    max-width: 300px;
+    padding: 10px 15px;
+
+    background-color: white;
+}
+
+.product__img {
+    margin-bottom: 10px;
+}
+
+.product__title {
+    margin-bottom: 10px;
+}
+
+.product__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.price-btn {
+    display: inline-block;
+    height: 48px;
+    padding: 12px 10px;
+
+    font-size: 16px;
+    background-color: var(--firm-color);
+}
+
+.price-btn:hover {
+    opacity: 0.8;
+}
