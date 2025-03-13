@@ -13,6 +13,21 @@ services:
       - frontend
     networks:
       - dev
+
+  # Сервис для PostgreSQL
+  postgres:
+    image: postgres:latest  # Используем официальный образ PostgreSQL
+    container_name: postgres_db  # Имя контейнера
+    environment:
+      POSTGRES_USER: postgres      # Имя пользователя
+      POSTGRES_PASSWORD: password  # Пароль пользователя
+      POSTGRES_DB: mydb    # Имя базы данных
+    ports:
+      - "5432:5432"  # Пробрасываем порт 5432 на хост
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - dev  # Подключаем контейнер к сети
     
 
   backend:
@@ -20,6 +35,8 @@ services:
       context: ./server
     networks:
       - dev
+    depends_on:
+      - postgres
 
   frontend:
     build:

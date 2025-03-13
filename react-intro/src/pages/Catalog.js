@@ -2,7 +2,6 @@ import { useContext, useEffect } from "react";
 import { Col, Container } from "react-bootstrap";
 import Product from "../components/product/Product";
 
-import products from "../helpers/productList";
 import { Row } from "react-bootstrap";
 import DeviceList from "../components/DeviceList";
 import {Context} from "../index";

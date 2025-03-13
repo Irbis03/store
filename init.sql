@@ -1,0 +1,2 @@
+create table users ( id bigserial primary key, email varchar(64) UNIQUE, password varchar(255), role varchar(64) default 'USER');
+create table device ( id bigserial primary key, name varchar(255) UNIQUE NOT NULL, price int NOT NULL, img varchar(255) NOT NULL);
