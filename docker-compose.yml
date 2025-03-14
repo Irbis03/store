@@ -37,6 +37,8 @@ services:
       - dev
     depends_on:
       - postgres
+    ports:
+      - "84.201.140.80:5000:5000"
 
   frontend:
     build:

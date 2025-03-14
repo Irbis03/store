@@ -28,5 +28,5 @@ func main() {
 	// инициализируем приложение и запускаем приложение
 	app := internal.NewApi()
 
-	log.Fatal(app.Listen("84.201.140.80:5000"))
+	log.Fatal(app.Listen(":5000"))
 }
