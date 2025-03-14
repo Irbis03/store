@@ -13,7 +13,7 @@ const Catalog = observer(() => {
 
     useEffect(() => {
         fetchDevices().then(data => device.setDevices(data))
-    })
+    }, [])
 
     return ( 
         <Container>
