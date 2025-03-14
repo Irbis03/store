@@ -12,9 +12,9 @@ type UserStorage interface {
 	PutUser(email, password, role string) (User, error)
 	GetUserByEmail(email string) (User, error)
 
-	// aditional
-	UpdateUser(user User) error
-	DeleteUser(user_id int) error
+	// // aditional
+	// UpdateUser(user User) error
+	// DeleteUser(user_id int) error
 	GetAllUser() ([]User, error)
 }
 
