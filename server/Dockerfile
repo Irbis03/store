@@ -9,4 +9,6 @@ RUN go mod download
 COPY . .
 RUN go build -v -o /usr/local/bin/app ./cmd/main.go
 
+EXPOSE 5000
+
 CMD ["app"]
