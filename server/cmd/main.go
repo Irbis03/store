@@ -11,7 +11,7 @@ import (
 
 func main() {
 	// открываем соединение с базой данных
-	connStr := "host=postgres user=postgres dbname=mydb sslmode=disable password=password"
+	connStr := "host=postgres user=postgres dbname=postgres sslmode=disable password=password"
 
 	var err error
 	internal.Db, err = sql.Open("postgres", connStr)
